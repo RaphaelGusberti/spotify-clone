@@ -39,3 +39,25 @@ carousels.forEach(wrapper => {
 
     track.addEventListener("scroll", updateArrows);
 });
+
+const playButtons = document.querySelectorAll(".music-play-btn");
+
+playButtons.forEach(button => {
+    button.addEventListener("click", () => {
+        const icon = button.querySelector("i");
+
+        const isPlaying = icon.classList.contains("fa-circle-pause");
+
+        playButtons.forEach(otherButton => {
+            const otherIcon = otherButton.querySelector("i");
+
+            otherIcon.classList.remove("fa-circle-pause");
+            otherIcon.classList.add("fa-circle-play");
+        });
+
+        if (!isPlaying) {
+            icon.classList.remove("fa-circle-play");
+            icon.classList.add("fa-circle-pause");
+        }
+    });
+});

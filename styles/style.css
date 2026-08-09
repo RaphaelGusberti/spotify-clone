@@ -357,6 +357,7 @@ nav {
     opacity: 0;
     transform: translateY(10px);
     transition: 0.3s;
+    cursor: pointer;
 }
 
 .artist-card .music-play-btn {
