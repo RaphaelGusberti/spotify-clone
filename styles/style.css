@@ -224,13 +224,13 @@ nav {
 }
 
 .box-container {
-    margin-top: 1rem;
+    margin: 1.5rem 0.5rem 0;
 }
 
 .box {
     width: 100%;
     margin-bottom: 1rem;
-    padding-bottom: 0.8rem;
+    padding-bottom: 1rem;
     border-radius: 10px;
     background-color: #1f1f1f;
 }
@@ -319,7 +319,7 @@ nav {
 }
 
 .artist-card {
-    flex-basis: 10rem;
+    flex-basis: 13.5rem;
     text-align: center;
 }
 
