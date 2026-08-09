@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web player: music for everybody</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" 
+    integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+
+    <!-- -->
+
+    <nav>
+        <div class="left-half">
+            <div class="spotify-logo"><i class="fa-brands fa-spotify"></i></div>
+            <div class="home-icon"><i class="fa-solid fa-house"></i></div>
+            <div class="search-bar">
+                <div class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                <input type="text" class="input-box" placeholder="What do you want to play?">
+                <div class="browser"><i class="fa-solid fa-folder-open"></i></div>
+            </div>
+        </div>
+
+        <div class="right-half">
+            <div class="right-half-1">
+                <p class="nav-text">Premium</p>
+                <p class="nav-text">Support</p>
+                <p class="nav-text">Download</p>
+            </div>
+            <div class="right-half-2">
+                <div class="nav-text"><i class="fa-regular fa-circle-down"></i> Install App</div>
+                <div class="nav-text">Sign up</div>
+                <button class="login">Log in</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- -->
+    <div class="main">
+        <div class="main-left-part">
+            <div class="lib">
+                <p>Your library</p>
+                <div>+</div>
+            </div>
+
+            <div class="box-container">
+                <div class="box">
+                    <h4>Create your first playlist</h4>
+                    <p>It's easy, we'll help you</p>
+                    <button>Create playlist</button>
+                </div>
+                <div class="box">
+                    <h4>Let's find some podcasts to follow</h4>
+                    <p>We'll keep you updated on new episodes.</p>
+                    <button>Browse podcasts</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- -->
+
+        <div class="main-right-part">
+            <div class="music-section">
+                <h2>Popular songs</h2>
+                <div class="songs">
+                    <div class="music-card">
+                        <img src="images/musics/2.jpg" alt="">
+                        <div class="music-play-btn"><i class="fa-solid fa-circle-play"></i></div>
+                        <div class="img-title">Lost in NY</div>
+                        <div class="img-description">Nova</div>
+                    </div>
+                    <div class="music-card">
+                        <img src="images/musics/4.jpg" alt="">
+                        <div class="music-play-btn"><i class="fa-solid fa-circle-play"></i></div>
+                        <div class="img-title">Memories</div>
+                        <div class="img-description">Hollow</div>
+                    </div>
+                    <div class="music-card">
+                        <img src="images/musics/5.jpg" alt="">
+                        <div class="music-play-btn"><i class="fa-solid fa-circle-play"></i></div>
+                        <div class="img-title">After Hours</div>
+                        <div class="img-description">Neon Hearts</div>
+                    </div>
+                    <div class="music-card">
+                        <img src="images/musics/6.jpg" alt="">
+                        <div class="music-play-btn"><i class="fa-solid fa-circle-play"></i></div>
+                        <div class="img-title">Take Me Back</div>
+                        <div class="img-description">Violet Sky</div>
+                    </div>
+                    <div class="music-card">
+                        <img src="images/musics/7.jpg" alt="">
+                        <div class="music-play-btn"><i class="fa-solid fa-circle-play"></i></div>
+                        <div class="img-title">Golden Hour</div>
+                        <div class="img-description">Luna Gray</div>
+                    </div>
+                    <div class="music-card">
+                        <img src="images/musics/8.jpg" alt="">
+                        <div class="music-play-btn"><i class="fa-solid fa-circle-play"></i></div>
+                        <div class="img-title">Paradise</div>
+                        <div class="img-description">Ocean Eyes</div>
+                    </div>
+                    <div class="music-card">
+                        <img src="images/musics/9.jpg" alt="">
+                        <div class="music-play-btn"><i class="fa-solid fa-circle-play"></i></div>
+                        <div class="img-title">Midnight Drive</div>
+                        <div class="img-description">FaLLen</div>
+                    </div>
+                    <div class="music-card">
+                        <img src="images/musics/1.jpg" alt="">
+                        <div class="music-play-btn"><i class="fa-solid fa-circle-play"></i></div>
+                        <div class="img-title">Digital Love</div>
+                        <div class="img-description">Echoes</div>
+                    </div>
+                    <div class="music-card">
+                        <img src="images/musics/3.jpg" alt="">
+                        <div class="music-play-btn"><i class="fa-solid fa-circle-play"></i></div>
+                        <div class="img-title">Last Call</div>
+                        <div class="img-description">Afterglow</div>
+                    </div>
+                </div>
+            </div>
+            <div class="artist-section">
+                <h2>Popular artists</h2>
+                    <div class="artists">
+                        <div class="artist-card">
+                            <img src="images/artists/1.jpg" alt="">
+                            <div class="music-play-btn"><i class="fa-solid fa-circle-play"></i></div>
+                            <div class="img-title">Echoes</div>
+                            <div class="img-description">Artist</div>
+                        </div>
+                        <div class="artist-card">
+                            <img src="images/artists/7.jpg" alt="">
+                            <div class="music-play-btn"><i class="fa-solid fa-circle-play"></i></div>
+                            <div class="img-title">Nova</div>
+                            <div class="img-description">Artist</div>
+                        </div>
+                        <div class="artist-card">
+                            <img src="images/artists/5.jpg" alt="">
+                            <div class="music-play-btn"><i class="fa-solid fa-circle-play"></i></div>
+                            <div class="img-title">FaLLen</div>
+                            <div class="img-description">Artist</div>
+                        </div>
+                        <div class="artist-card">
+                            <img src="images/artists/2.jpg" alt="">
+                            <div class="music-play-btn"><i class="fa-solid fa-circle-play"></i></div>
+                            <div class="img-title">Hollow</div>
+                            <div class="img-description">Artist</div>
+                        </div>
+                        <div class="artist-card">
+                            <img src="images/artists/6.jpg" alt="">
+                            <div class="music-play-btn"><i class="fa-solid fa-circle-play"></i></div>
+                            <div class="img-title">Neon Hearts</div>
+                            <div class="img-description">Artist</div>
+                        </div>
+                        <div class="artist-card">
+                            <img src="images/artists/9.jpg" alt="">
+                            <div class="music-play-btn"><i class="fa-solid fa-circle-play"></i></div>
+                            <div class="img-title">Afterglow</div>
+                            <div class="img-description">Artist</div>
+                        </div>
+                        <div class="artist-card">
+                            <img src="images/artists/3.jpg" alt="">
+                            <div class="music-play-btn"><i class="fa-solid fa-circle-play"></i></div>
+                            <div class="img-title">Ocean Eyes</div>
+                            <div class="img-description">Artist</div>
+                        </div>
+                        <div class="artist-card">
+                            <img src="images/artists/8.jpg" alt="">
+                            <div class="music-play-btn"><i class="fa-solid fa-circle-play"></i></div>
+                            <div class="img-title">Luna Gray</div>
+                            <div class="img-description">Artist</div>
+                        </div>
+                        <div class="artist-card">
+                            <img src="images/artists/4.jpg" alt="">
+                            <div class="music-play-btn"><i class="fa-solid fa-circle-play"></i></div>
+                            <div class="img-title">Crimson</div>
+                            <div class="img-description">Artist</div>
+                        </div>
+                    </div>
+            </div>
+            <div class="music-section">
+                <h2>Albums that everybody likes</h2>
+                <div class="songs">
+                    <div class="music-card">
+                        <img src="images/albums/1.jpg" alt="">
+                        <div class="music-play-btn"><i class="fa-solid fa-circle-play"></i></div>
+                        <div class="img-title">After the War</div>
+                        <div class="img-description">Vanta</div>
+                    </div>
+                    <div class="music-card">
+                        <img src="images/albums/2.jpg" alt="">
+                        <div class="music-play-btn"><i class="fa-solid fa-circle-play"></i></div>
+                        <div class="img-title">Midnight Paws</div>
+                        <div class="img-description">Maya Rivers</div>
+                    </div>
+                    <div class="music-card">
+                        <img src="images/albums/3.jpg" alt="">
+                        <div class="music-play-btn"><i class="fa-solid fa-circle-play"></i></div>
+                        <div class="img-title">Into the City</div>
+                        <div class="img-description">????? Parker</div>
+                    </div>
+                    <div class="music-card">
+                        <img src="images/albums/4.jpg" alt="">
+                        <div class="music-play-btn"><i class="fa-solid fa-circle-play"></i></div>
+                        <div class="img-title">Broken Reality</div>
+                        <div class="img-description">Alex Monroe</div>
+                    </div>
+                    <div class="music-card">
+                        <img src="images/albums/5.jpg" alt="">
+                        <div class="music-play-btn"><i class="fa-solid fa-circle-play"></i></div>
+                        <div class="img-title">Golden Hour</div>
+                        <div class="img-description">Elias North</div>
+                    </div>
+                    <div class="music-card">
+                        <img src="images/albums/6.jpg" alt="">
+                        <div class="music-play-btn"><i class="fa-solid fa-circle-play"></i></div>
+                        <div class="img-title">Last Light</div>
+                        <div class="img-description">Olivia Lane</div>
+                    </div>
+                    <div class="music-card">
+                        <img src="images/albums/7.jpg" alt="">
+                        <div class="music-play-btn"><i class="fa-solid fa-circle-play"></i></div>
+                        <div class="img-title">Ocean Dreams</div>
+                        <div class="img-description">Gabriel Medina</div>
+                    </div>
+                    <div class="music-card">
+                        <img src="images/albums/8.jpg" alt="">
+                        <div class="music-play-btn"><i class="fa-solid fa-circle-play"></i></div>
+                        <div class="img-title">Chasing Waves</div>
+                        <div class="img-description">Coastline</div>
+                    </div>
+                    <div class="music-card">
+                        <img src="images/albums/9.jpg" alt="">
+                        <div class="music-play-btn"><i class="fa-solid fa-circle-play"></i></div>
+                        <div class="img-title">The Beautiful Game</div>
+                        <div class="img-description">The Strikers</div>
+                    </div>
+                </div>
+            </div>
+        </div>     
+        
+    </div>
+
+
+</body>
+
+</html>
+
+
