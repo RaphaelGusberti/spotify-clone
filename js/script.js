@@ -40,6 +40,24 @@ carousels.forEach(wrapper => {
     track.addEventListener("scroll", updateArrows);
 });
 
+const searchInput = document.querySelector(".input-box");
+const cards = document.querySelectorAll(".music-card, .artist-card");
+
+searchInput.addEventListener("input", () => {
+    const searchTerm = searchInput.value.toLowerCase().trim();
+
+    cards.forEach(card => {
+        const title = card.querySelector(".img-title")?.textContent.toLowerCase() || "";
+        const description = card.querySelector(".img-description")?.textContent.toLowerCase() || "";
+
+        const matches =
+            title.includes(searchTerm) ||
+            description.includes(searchTerm);
+
+        card.style.display = matches ? "" : "none";
+    });
+});
+
 const playButtons = document.querySelectorAll(".music-play-btn");
 
 playButtons.forEach(button => {
