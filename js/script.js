@@ -5,20 +5,23 @@ carousels.forEach(wrapper => {
     const leftBtn = wrapper.querySelector(".arrow-left");
     const rightBtn = wrapper.querySelector(".arrow-right");
 
-    const card = track.querySelector(".music-card, .artist-card");
-    const gap = parseFloat(getComputedStyle(track).gap);
-    const scrollAmount = (card.offsetWidth + gap) * 3;
+    const getScrollAmount = () => {
+        const card = track.querySelector(".music-card, .artist-card");
+        const gap = parseFloat(getComputedStyle(track).gap);
+
+        return (card.offsetWidth + gap) * 3;
+    };
 
     leftBtn.addEventListener("click", () => {
         track.scrollBy({
-            left: -scrollAmount,
+            left: -getScrollAmount(),
             behavior: "smooth"
         });
     });
 
     rightBtn.addEventListener("click", () => {
         track.scrollBy({
-            left: scrollAmount,
+            left: getScrollAmount(),
             behavior: "smooth"
         });
     });
@@ -40,6 +43,7 @@ carousels.forEach(wrapper => {
     track.addEventListener("scroll", updateArrows);
 });
 
+
 const searchInput = document.querySelector(".input-box");
 const cards = document.querySelectorAll(".music-card, .artist-card");
 
@@ -47,8 +51,11 @@ searchInput.addEventListener("input", () => {
     const searchTerm = searchInput.value.toLowerCase().trim();
 
     cards.forEach(card => {
-        const title = card.querySelector(".img-title")?.textContent.toLowerCase() || "";
-        const description = card.querySelector(".img-description")?.textContent.toLowerCase() || "";
+        const title =
+            card.querySelector(".img-title")?.textContent.toLowerCase() || "";
+
+        const description =
+            card.querySelector(".img-description")?.textContent.toLowerCase() || "";
 
         const matches =
             title.includes(searchTerm) ||
@@ -58,12 +65,12 @@ searchInput.addEventListener("input", () => {
     });
 });
 
+
 const playButtons = document.querySelectorAll(".music-play-btn");
 
 playButtons.forEach(button => {
     button.addEventListener("click", () => {
         const icon = button.querySelector("i");
-
         const isPlaying = icon.classList.contains("fa-circle-pause");
 
         playButtons.forEach(otherButton => {
