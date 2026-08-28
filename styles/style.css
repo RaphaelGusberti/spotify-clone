@@ -466,7 +466,6 @@ nav {
 
 /* --------------- RESPONSIVE --------------- */
 
-/* Em telas largas, os controles ficam centralizados na viewport. */
 @media (min-width: 1600px) {
     .nav-center {
         position: absolute;
